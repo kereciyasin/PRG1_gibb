@@ -72,12 +72,13 @@
 			// 
 			// button1
 			// 
-			button1.Location = new Point(187, 242);
+			button1.Location = new Point(181, 242);
 			button1.Name = "button1";
 			button1.Size = new Size(130, 45);
 			button1.TabIndex = 4;
 			button1.Text = "Login";
 			button1.UseVisualStyleBackColor = true;
+			button1.Click += button1_Click;
 			// 
 			// button2
 			// 
@@ -87,6 +88,7 @@
 			button2.TabIndex = 5;
 			button2.Text = "Reset";
 			button2.UseVisualStyleBackColor = true;
+			button2.Click += button2_Click_1;
 			// 
 			// Form1
 			// 
