@@ -38,11 +38,11 @@ Dieses Projekt ist eine einfache Windows Forms Anwendung, die eine Eingabemaske 
 
 ### Erfolgreicher Login
 
-![Erfolgreicher Login](Screenshot.png)
+![Erfolgreicher Login](/Screenshot/Screenshot.png)
 
 ### Fehlgeschlagener Login
 
-![Fehlgeschlagener Login](Screenshot1.png)
+![Fehlgeschlagener Login](/Screenshot/Screenshot1.png)
 
 
 ## Fazit
