@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Praxis_Challenge_Validierung_einer_Eingabe"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="MainWindow" Height="200" Width="400">
     <Grid>
         <TextBlock Text="Email Address:" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="30,30,0,0"/>
         <TextBox Name="emailTextBox" Width="200" Height="25" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="130,30,0,0"/>

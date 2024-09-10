@@ -26,7 +26,7 @@ namespace Praxis_Challenge_Validierung_einer_Eingabe
 			string email = emailTextBox.Text;
 			string password = passwordBox.Password;
 
-			// eger email vmadmin@stud.gibb.ch ise ve password sml12345 ise basarili giris desin
+			
 			if (email == "vmadmin@stud.gibb.ch" && password == "sml12345")
 			{
 				statusTextBlock.Text = "Login successful!";
