@@ -7,15 +7,19 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="200" Width="400">
     <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="273*"/>
+            <ColumnDefinition Width="127*"/>
+        </Grid.ColumnDefinitions>
         <TextBlock Text="Email Address:" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="30,30,0,0"/>
-        <TextBox Name="emailTextBox" Width="200" Height="25" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="130,30,0,0"/>
+        <TextBox Name="emailTextBox" Width="200" Height="25" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="130,30,0,0" Grid.ColumnSpan="2"/>
 
         <TextBlock Text="Password:" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="30,70,0,0"/>
-        <PasswordBox Name="passwordBox" Width="200" Height="25" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="130,70,0,0"/>
+        <PasswordBox Name="passwordBox" Width="200" Height="25" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="130,70,0,0" Grid.ColumnSpan="2"/>
 
         <Button Name="loginButton" Content="Login" Width="80" Height="30" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="130,120,0,0" Click="LoginButton_Click"/>
-        <Button Name="resetButton" Content="Reset" Width="80" Height="30" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="220,120,0,0" Click="ResetButton_Click"/>
+        <Button Name="resetButton" Content="Reset" Width="80" Height="30" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="220,120,0,0" Click="ResetButton_Click" Grid.ColumnSpan="2"/>
 
-        <TextBlock Name="statusTextBlock" Text="" Foreground="Red" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="30,170,0,0" Width="300"/>
+        <TextBlock Name="statusTextBlock" Text="" Foreground="Red" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="30,170,0,0" Width="300" Grid.ColumnSpan="2"/>
     </Grid>
 </Window>
