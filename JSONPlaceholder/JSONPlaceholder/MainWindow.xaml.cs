@@ -26,6 +26,7 @@ namespace ApiDataApp
 			try
 			{
 				var response = await client.GetStringAsync("https://jsonplaceholder.typicode.com/posts");
+				StatusText.Text = $"API Response Length: {response.Length}"; // Yanıt uzunluğunu göster
 				var posts = JsonConvert.DeserializeObject<List<Post>>(response);
 				return posts;
 			}
@@ -37,14 +38,16 @@ namespace ApiDataApp
 		}
 
 
-		// Veriyi ekranda gösteren metod
-		private async void FetchData()
+		private async 
+
+		Task
+FetchData()
 		{
 			StatusText.Text = "Status: Fetching data...";
 			var posts = await FetchPostsFromApi();
 			if (posts != null)
 			{
-				PostsListView.ItemsSource = posts;
+				PostsListView.ItemsSource = posts; // Listeyi güncelle
 				StatusText.Text = $"Status: {posts.Count} posts loaded.";
 			}
 			else
@@ -52,6 +55,8 @@ namespace ApiDataApp
 				StatusText.Text = "Status: No data retrieved.";
 			}
 		}
+
+
 
 
 		// Butona basıldığında çağrılan metod
@@ -65,9 +70,12 @@ namespace ApiDataApp
 		{
 			timer = new DispatcherTimer();
 			timer.Interval = TimeSpan.FromSeconds(30); // Her 30 saniyede bir veri çek
-			timer.Tick += (s, e) => FetchData();
+			timer.Tick += async (s, e) => await FetchData(); // FetchData() metodunu async olarak çağırıyoruz
 			timer.Start();
 		}
+
+
+
 
 	}
 
