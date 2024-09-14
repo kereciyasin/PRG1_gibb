@@ -18,7 +18,7 @@ Wenn der Benutzer die korrekten Anmeldedaten eingibt, wird eine Erfolgsmeldung a
 ## Screenshots
 
 ### Anmeldebildschirm
-![Anmeldebildschirm](/Screenshot/Screenshot1.png)
+![Anmeldebildschirm](Screenshot/Screenshot1.png)
 
 ## Funktionsweise
 
