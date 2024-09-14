@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Praxis_Challenge_Validierung_einer_Eingabe"
         mc:Ignorable="d"
-        Title="MainWindow" Height="200" Width="400">
+        Title="Login" Height="200" Width="400">
     <Grid>
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="273*"/>

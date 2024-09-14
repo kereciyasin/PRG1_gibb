@@ -11,9 +11,7 @@ using System.Windows.Shapes;
 
 namespace Praxis_Challenge_Validierung_einer_Eingabe
 {
-	/// <summary>
-	/// Interaction logic for MainWindow.xaml
-	/// </summary>
+
 	public partial class MainWindow : Window
 	{
 		public MainWindow()
