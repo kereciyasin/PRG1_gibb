@@ -27,11 +27,11 @@ namespace Praxis_Challenge_Validierung_einer_Eingabe
 			
 			if (email == "vmadmin@stud.gibb.ch" && password == "sml12345")
 			{
-				statusTextBlock.Text = "Login successful!";
+				MessageBox.Show("Login successful!");
 			}
 			else
 			{
-				statusTextBlock.Text = "Login failed!";
+				MessageBox.Show( "Login failed!");
 			}	
 
 		}
